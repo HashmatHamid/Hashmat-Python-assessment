@@ -6,9 +6,6 @@ With the easy questions you will be asked number questions and the answers wil b
 I reccomend doing a playthrough of both the quizes at least once. """)
 print("I hope you enjoy :)")
 name=input("What is your name? ")
-if name == int:
-  print("qq")
-else: print("Hello {} I hope you have fun playing my quiz".format(name))
 if name == str( ): 
   print("That was not a name")
   name_1=input("What is really your name? ")
@@ -16,3 +13,8 @@ if name == str( ):
  
 else: 
   print("Hello {}, I hope you enjoy my quiz".format(name))
+x = "1"
+
+if not type(name) is str:
+  raise TypeError("Only strings are allowed")
+else: print("Hello {}, I hope you enjoy my quiz".format(name))
