@@ -10,11 +10,25 @@ wil be in a multi-choice form.
 I reccomend doing a playthrough of both the quizes at least once. """)
 print("I hope you enjoy :)")
 name=input("What is your name? ")
+if name == str( ): 
+  print("That was not a name")
+  name_1=input("What is really your name? ")
+  print("Hello {} I hope you have fun playing my game".format(name_1))
+else: print("Hello {}, I hope you have a good day".format(name))
 while True:
     try:
-        n = input("Please enter your age: ")
-        n = int(n)
+        age = input("Please enter your age: ")
+        age = int(age)
         break
     except ValueError:
         print("Not a valid age! Please try again ...")
-print("Great, you successfully entered your age!") 
+  
+print("Wow, you are {}".format(age))
+def input(prompt):
+    while True:
+        try:
+            name = (input(prompt))
+            return name
+        except ValueError as e:
+            print("Not a proper integer! Try  again")
+
