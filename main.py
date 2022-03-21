@@ -27,5 +27,3 @@ while True:
         print("Not a valid age! Please try again ...")
   
 print("Wow, you are {}".format(age))
-if age== (15)
-print("hello")
