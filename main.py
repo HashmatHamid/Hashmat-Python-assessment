@@ -24,11 +24,12 @@ while True:
         print("Not a valid age! Please try again ...")
   
 print("Wow, you are {}".format(age))
-def input(prompt):
-    while True:
-        try:
-            name = (input(prompt))
-            return name
-        except ValueError as e:
-            print("Not a proper integer! Try  again")
-
+while True:
+    try:
+        aa = input("Please enter your name: ")
+        if aa.isalpha():
+          break
+    except ValueError:
+        print("Not a valid name")
+  
+print("Wow, you are {}".format(aa))
