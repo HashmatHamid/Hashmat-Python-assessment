@@ -17,7 +17,7 @@ while True:
     except ValueError:
         print("Not a valid name")
   
-print("Hello, {} I hope you have fun playing my game".format(name))
+print("Hello {} I hope you have fun playing my game".format(name))
 while True:
     try:
         age = input("Please enter your age: ")
@@ -27,3 +27,14 @@ while True:
         print("Not a valid age! Please try again ...")
   
 print("Wow, you are {}".format(age))
+
+qq = { 'What is 2*2 \n a: 4\n b: 5\n c: 3\n' : 'a' , 'What is 3*2\n a: 2\n b: 6\n c: 7 \n' : 'b' , 
+             'What is the unit for factorial in maths \n a: ^\n b: %\n c: ! \n' : 'c' }
+
+for key in qq.keys():
+    user_answer=input(key).lower().strip()
+    if qq.get(key)==user_answer:
+        print("Correct!") 
+    else:
+        print("You're Wrong!")
+
