@@ -37,8 +37,8 @@ def age():
 
 def questions():
    
-    qq = { 'What is 2*2 \n a: 4\n b: 5\n c: 3\n' : 'a' , 'What is 3*2\n a: 2\n b: 6\n c: 7 \n' : 'b' ,
-                 'What is the unit for factorial in maths \n a: ^\n b: %\n c: ! \n' : 'c' }
+    qq = { 'What is 2*2 \n a: 4\n b: 5\n c: 3\n' : '4' , 'What is 3*2\n a: 2\n b: 6\n c: 7 \n' : '6' ,
+                 'What is the unit for factorial in maths \n a: ^\n b: %\n c: ! \n' : '!' }
    
     for key in qq.keys():
         user_answer=input(key).lower().strip()
