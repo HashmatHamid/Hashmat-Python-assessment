@@ -38,7 +38,8 @@ def age():
 def questions():
    
     qq = { 'What is 2*2 \n a: 4\n b: 5\n c: 3\n' : '4' , 'What is 3*2\n a: 2\n b: 6\n c: 7 \n' : '6' ,
-                 'What is the unit for factorial in maths \n a: ^\n b: %\n c: ! \n' : '!' }
+                 'What is the unit for factorial in maths \n a: ^\n b: %\n c: ! \n' : '!' , 'What is the equation for a question using the pythagoras therom \n a: a^2+b^2=c^2\n b: b^2+c^2=a^2\n c: c^2+a^2=b^2 \n' : 'a^2+b^2=c^2' 
+         }
    
     for key in qq.keys():
         user_answer=input(key).lower().strip()
