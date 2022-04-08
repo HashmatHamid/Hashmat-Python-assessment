@@ -1,3 +1,4 @@
+score=0
 def intro():
     print("""Hello and welcome to my general mathematics quiz.
 In this quiz you will be asked from 10-50 mathematics questions based on 
@@ -45,14 +46,15 @@ def questions():
         user_answer=input(key).lower().strip()
         if qq.get(key)==user_answer:
             print("Correct!")
+            score+=1
         else:
             print("You're Wrong!")
 
    
    
 
-   
 intro()    
 name()
 age()
 questions()
+print("You got "+str(score)+" right!")
