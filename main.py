@@ -1,3 +1,4 @@
+import random
 score=0
 def intro():
     print("""Hello and welcome to my general mathematics quiz.
