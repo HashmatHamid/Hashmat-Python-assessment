@@ -1,4 +1,4 @@
-
+#this is the introduction  to my quiz
 def intro():
     print("""Hello and welcome to my general mathematics quiz.
 In this quiz you will be asked from 10-50 mathematics questions based on 
@@ -12,6 +12,7 @@ wil be in a multi-choice form. """)
     print("I hope you enjoy :)")
 
 
+#this is where user gets asked to input their name
 def name():
     while True:
         try:
@@ -22,6 +23,7 @@ def name():
             print("Not a valid name")
      
     print("Hello {} I hope you have fun playing my game".format(name))  
+#this is where user gets asked to input their age
 
 def age():
     while True:
@@ -34,7 +36,7 @@ def age():
      
     print("Wow, you are {}".format(age))  
    
-
+#all my questions
 def questions():
     global score
     score=0
@@ -52,9 +54,10 @@ def questions():
 
    
    
-
+#printing functions
 intro()    
 name()
 age()
 questions()
+#print score
 print("You got "+str(score)+" right!")
